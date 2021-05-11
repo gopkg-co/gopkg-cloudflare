@@ -1,3 +1,7 @@
+// Deploy this worker and attach it to a Cloudflare site
+// to `*domain.tld/*` route so that it can listen on all incoming
+// requests.
+
 function handleRequest(req) {
     const url = new URL(req.url)
     const params = new URLSearchParams(url.search)
